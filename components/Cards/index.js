@@ -32,13 +32,13 @@ axios
         console.log(err);
     })
 
-    // Another option given by Justin
+    // Another axios solution shared by Justin
     // axios.get('https://lambda-times-backend.herokuapp.com/articles').then(response => {
     //     let articles = response.data.articles;
     //     console.log(response.data);
     //     for (topic in articles) {
     //         articles[topic].forEach(article => {
-    //             entry.appendChild(ArticleCard(article));
+    //             entry.appendChild(cardComponent(article));
     //         });
     //     }
     // });

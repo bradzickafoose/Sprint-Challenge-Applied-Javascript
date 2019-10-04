@@ -30,7 +30,7 @@ function carouselComponent(array) {
     leftButton = document.createElement('div'),
     rightButton = document.createElement('div'),
     image = document.createElement('img'),
-    // For button arrows: https://graphemica.com/▼
+    // Button arrows - thx https://graphemica.com/▼
     right = '\u276f', 
     left = '\u276e';
 
@@ -62,7 +62,7 @@ function carouselComponent(array) {
     carouselContainer.appendChild(carouselComponent(imgArray));
   })
 
-  // return
+  // return that shiz
   console.log('Uh... Hello?')
   return carousel;
 }
