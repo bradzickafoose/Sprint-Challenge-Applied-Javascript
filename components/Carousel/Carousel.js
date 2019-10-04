@@ -30,9 +30,9 @@ function carouselComponent(array) {
     leftButton = document.createElement('div'),
     rightButton = document.createElement('div'),
     image = document.createElement('img'),
-    // Button arrows - thx https://graphemica.com/▼
-    right = '\u276f', 
-    left = '\u276e';
+    // Button arrows (thx https://graphemica.com)
+    left = '\u276e',
+    right = '\u276f';
 
   // set class names
   carousel.classList.add('carousel');
