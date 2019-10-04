@@ -22,7 +22,7 @@ axios
     .get('https://lambda-times-backend.herokuapp.com/articles')
     .then(response => {
         const articlesArray = Object.values(response.data.articles);
-        // console.log(articlesArray);
+        console.log(articlesArray);
 
         articlesArray.forEach(element => {
             element.forEach(e => cardsContainer.appendChild(cardComponent(e)))
@@ -31,6 +31,17 @@ axios
     .catch(err => {
         console.log(err);
     })
+
+    // Another option given by Justin
+    // axios.get('https://lambda-times-backend.herokuapp.com/articles').then(response => {
+    //     let articles = response.data.articles;
+    //     console.log(response.data);
+    //     for (topic in articles) {
+    //         articles[topic].forEach(article => {
+    //             entry.appendChild(ArticleCard(article));
+    //         });
+    //     }
+    // });
 
     const cardsContainer = document.querySelector(".cards-container");
 
