@@ -12,8 +12,10 @@
 axios
     .get('https://lambda-times-backend.herokuapp.com/topics')
     .then(response => {
-        topicsContainer.appendChild(createTabs(response.data))
-        console.log(response);
+        response.data.topics.forEach(element => {
+            topicsContainer.appendChild(tabComponent(element));
+        })
+        // console.log(response);
     })
     .catch(err => {
         console.log(err);
@@ -21,7 +23,7 @@ axios
     
     const topicsContainer = document.querySelector(".topics");
 
-    function createTabs(trending) {
+    function tabComponent(trending) {
 
         // define new element
         const tab = document.createElement('div');
@@ -30,7 +32,7 @@ axios
         tab.classList.add('tab');
 
         // set text content
-        tab.textContent = trending.topics;
+        tab.textContent = trending;
 
         return tab;
     }

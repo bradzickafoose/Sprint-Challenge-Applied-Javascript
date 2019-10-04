@@ -9,6 +9,8 @@
 //  </div >
 // And add it to the DOM in the .header-container component
 
+const headerContainer = document.querySelector(".header-container");
+
 function Header() {
 
     // define new elements
@@ -35,7 +37,5 @@ function Header() {
 
     return header;
 }
-
-const headerContainer = document.querySelector(".header-container");
 
 headerContainer.appendChild(Header());
