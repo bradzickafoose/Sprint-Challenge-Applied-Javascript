@@ -16,7 +16,7 @@ function Header() {
         header = document.createElement('div'),
         date = document.createElement('span'),
         logo = document.createElement('h1'),
-        temperature = document.createElelemt('span');
+        temperature = document.createElement('span');
 
     // set class names
     header.classList.add('header');
